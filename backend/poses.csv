@@ -1,0 +1,88 @@
+name,difficulty,body_areas,duration_seconds,pose_type,timing_mode,side_mode,v1_status,review_note,changed_fields,original_name,original_difficulty,original_duration_seconds,original_pose_type
+Easy Pose,beginner,hips;back;core,60,static_hold,hold,once,candidate_for_v1,Use support under hips if needed; seated grounding pose.,body_areas,Easy Pose,beginner,60,static_hold
+Mountain Pose,beginner,legs;core,30,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Mountain Pose,beginner,30,static_hold
+Child's Pose,beginner,back;hips;shoulders,60,restorative,hold,once,candidate_for_v1,May be restorative with support or active stretch; knees/hips may need modifications.,none,Child's Pose,beginner,60,restorative
+Cat-Cow,beginner,back;neck;core,45,dynamic_movement,movement_total,once,candidate_for_v1,45 seconds is total movement time; not a 45-second hold.,none,Cat-Cow,beginner,45,dynamic_movement
+Tabletop Pose,beginner,core;shoulders;back,30,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Tabletop Pose,beginner,30,static_hold
+Thread the Needle,beginner,shoulders;back;neck,30,static_hold,hold,per_side,candidate_for_v1,30 seconds PER SIDE; avoid forcing shoulder rotation.,duration_seconds,Thread the Needle,beginner,45,static_hold
+Downward-Facing Dog,beginner,shoulders;legs;back,30,static_hold,hold,once,candidate_for_v1,"Primary type is static_hold, with secondary inversion characteristic.",none,Downward-Facing Dog,beginner,30,static_hold
+Standing Forward Fold,beginner,legs;back,30,static_hold,hold,once,candidate_for_v1,Bend knees as needed; do not force hamstring range.,none,Standing Forward Fold,beginner,30,static_hold
+Halfway Lift,beginner,back;core;legs,15,static_hold,hold,once,candidate_for_v1,Can be a brief static position or repeated dynamically; model version is static.,pose_type,Halfway Lift,beginner,15,dynamic_movement
+Standing Side Bend,beginner,back;shoulders;core,30,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Standing Side Bend,beginner,30,static_hold
+Gentle Standing Backbend,beginner,back;chest;core,15,static_hold,hold,once,requires_modification_rules,"Specify gentle version, not a deep unsupported backbend. Require appropriate modification options.",name,Standing Backbend,beginner,15,static_hold
+Chair Pose,beginner,legs;core;back,30,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Chair Pose,beginner,30,static_hold
+Low Lunge,beginner,hips;legs,45,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Low Lunge,beginner,45,static_hold
+Half Split,beginner,legs;hips,45,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Half Split,beginner,45,static_hold
+High Lunge,beginner,legs;hips;core,30,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,High Lunge,beginner,30,static_hold
+Warrior I,beginner,legs;hips;shoulders,45,static_hold,hold,per_side,candidate_for_v1,Per side; foot position may need modification.,none,Warrior I,beginner,45,static_hold
+Warrior II,beginner,legs;hips;core,45,static_hold,hold,per_side,candidate_for_v1,Per side; default is 45 seconds per side.,none,Warrior II,beginner,45,static_hold
+Reverse Warrior,beginner,legs;back;core,30,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Reverse Warrior,beginner,30,static_hold
+Triangle Pose,beginner,legs;hips;back,30,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Triangle Pose,beginner,30,static_hold
+Extended Side Angle,beginner,legs;hips;core,30,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Extended Side Angle,beginner,30,static_hold
+Wide-Legged Forward Fold,beginner,legs;hips;back,45,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Wide-Legged Forward Fold,beginner,45,static_hold
+Tree Pose,beginner,legs;hips;core,30,balance,hold,per_side,candidate_for_v1,30 seconds PER SIDE; use wall for balance.,none,Tree Pose,beginner,30,balance
+Standing Knee Hug,beginner,legs;hips;core,30,balance,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Standing Knee Hug,beginner,30,balance
+Garland Pose,beginner,hips;legs;back,45,static_hold,hold,once,candidate_for_v1,Heels may be supported; avoid forcing knee/hip depth.,none,Garland Pose,beginner,45,static_hold
+Staff Pose,beginner,back;core;legs,45,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Staff Pose,beginner,45,static_hold
+Seated Forward Fold,beginner,legs;back;hips,60,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Seated Forward Fold,beginner,60,static_hold
+Head-to-Knee Pose,beginner,legs;hips;back,45,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Head-to-Knee Pose,beginner,45,static_hold
+Bound Angle Pose,beginner,hips;back;legs,60,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Bound Angle Pose,beginner,60,static_hold
+Seated Side Bend,beginner,back;shoulders;hips,30,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Seated Side Bend,beginner,30,static_hold
+Seated Spinal Twist,beginner,back;hips;core,45,static_hold,hold,per_side,candidate_for_v1,Per side; use gentle rotation without forcing.,none,Seated Spinal Twist,beginner,45,static_hold
+Sphinx Pose,beginner,back;chest;shoulders,45,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Sphinx Pose,beginner,45,static_hold
+Cobra Pose,beginner,back;chest;shoulders,30,static_hold,hold,once,candidate_for_v1,Gentle version; do not compress low back.,none,Cobra Pose,beginner,30,static_hold
+Locust Pose,intermediate,back;legs;core,20,static_hold,hold,once,requires_modification_rules,Reclassified intermediate due to active posterior-chain demand; beginner variants exist. Require appropriate modification options.,difficulty,Locust Pose,beginner,20,static_hold
+Bridge Pose,beginner,back;hips;legs,30,static_hold,hold,once,candidate_for_v1,"Active strengthening hold, not automatically restorative.",none,Bridge Pose,beginner,30,static_hold
+Supine Spinal Twist,beginner,back;hips,60,restorative,hold,per_side,candidate_for_v1,60 seconds PER SIDE; use support as needed.,none,Supine Spinal Twist,beginner,60,restorative
+Happy Baby Pose,beginner,hips;legs;back,60,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Happy Baby Pose,beginner,60,static_hold
+Knees-to-Chest Pose,beginner,back;hips,45,restorative,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Knees-to-Chest Pose,beginner,45,restorative
+Reclined Figure Four,beginner,hips;legs;back,60,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Reclined Figure Four,beginner,60,static_hold
+Reclined Bound Angle,beginner,hips;legs,120,restorative,hold,once,candidate_for_v1,Can be restorative if supported; avoid forcing hips.,none,Reclined Bound Angle,beginner,120,restorative
+Legs Up the Wall,beginner,legs;back,180,restorative,hold,once,candidate_for_v1,Supported gentle inversion; primary type restorative.,none,Legs Up the Wall,beginner,180,restorative
+Corpse Pose,beginner,whole_body,300,restorative,hold,once,candidate_for_v1,Whole-body rest; duration should scale with class length.,body_areas,Corpse Pose,beginner,300,restorative
+Puppy Pose,beginner,shoulders;back;chest,45,static_hold,hold,once,requires_modification_rules,Baseline classification only; individual ability and modifications still matter.,none,Puppy Pose,beginner,45,static_hold
+Gate Pose,beginner,back;hips;shoulders,30,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Gate Pose,beginner,30,static_hold
+Kneeling Hip Flexor Stretch,beginner,hips;legs,45,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Kneeling Hip Flexor Stretch,beginner,45,static_hold
+Plank Pose,beginner,core;shoulders;arms,30,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Plank Pose,beginner,30,static_hold
+Knees-Chest-Chin Pose,beginner,arms;shoulders;back,5,dynamic_movement,movement_total,once,requires_modification_rules,"Short transitional movement, not a long hold; consider omission for shoulder-sensitive users. Require appropriate modification options.",duration_seconds,Knees-Chest-Chin Pose,beginner,15,dynamic_movement
+Dolphin Pose,intermediate,shoulders;arms;core,30,static_hold,hold,once,requires_modification_rules,Shoulder-load requirement; not appropriate for every beginner. Require appropriate modification options.,none,Dolphin Pose,intermediate,30,static_hold
+Forearm Plank,intermediate,core;shoulders;arms,30,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Forearm Plank,intermediate,30,static_hold
+Side Plank,intermediate,core;shoulders;arms,30,balance,hold,per_side,candidate_for_v1,30 seconds PER SIDE; knee-down option.,none,Side Plank,intermediate,30,balance
+Chaturanga,intermediate,arms;shoulders;core,3,dynamic_movement,movement_total,once,manual_review_only,"Brief controlled transition, not a 10-second low push-up hold; exclude until progression logic exists.",duration_seconds,Chaturanga,intermediate,10,dynamic_movement
+Upward-Facing Dog,intermediate,back;shoulders;chest,10,static_hold,hold,once,requires_modification_rules,Shorter default; requires shoulder/back tolerance; Cobra alternative. Require appropriate modification options.,duration_seconds,Upward-Facing Dog,intermediate,20,static_hold
+Warrior III,intermediate,legs;hips;core,30,balance,hold,per_side,candidate_for_v1,Per side; wall/block support.,none,Warrior III,intermediate,30,balance
+Half Moon Pose,intermediate,legs;hips;core,30,balance,hold,per_side,candidate_for_v1,Per side; use block/wall.,none,Half Moon Pose,intermediate,30,balance
+Revolved Triangle,intermediate,back;hips;legs;core,30,static_hold,hold,per_side,requires_modification_rules,Per side; significant balance and spinal rotation demands. Require appropriate modification options.,none,Revolved Triangle,intermediate,30,static_hold
+Revolved Side Angle,intermediate,hips;back;core,30,static_hold,hold,per_side,requires_modification_rules,Per side; significant balance and rotation demands. Require appropriate modification options.,none,Revolved Side Angle,intermediate,30,static_hold
+Reverse Triangle (variation),intermediate,legs;back;hips,30,static_hold,hold,per_side,manual_review_only,Ambiguous/nonstandard naming across schools; define exact shape before auto-generating. Do not auto-generate in V1.,name,Reverse Triangle,intermediate,30,static_hold
+Pyramid Pose,intermediate,legs;hips;back,45,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Pyramid Pose,intermediate,45,static_hold
+Standing Hand-to-Big-Toe Pose,intermediate,legs;hips;core,30,balance,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Standing Hand-to-Big-Toe Pose,intermediate,30,balance
+Eagle Pose,intermediate,legs;hips;shoulders;core,30,balance,hold,per_side,candidate_for_v1,Per side; modifications for knees/shoulders.,none,Eagle Pose,intermediate,30,balance
+Dancer Pose,intermediate,legs;hips;back;shoulders,30,balance,hold,per_side,requires_modification_rules,Per side; avoid forcing low-back extension. Require appropriate modification options.,none,Dancer Pose,intermediate,30,balance
+Chair Twist,intermediate,legs;back;core,30,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Chair Twist,intermediate,30,static_hold
+Crescent Lunge Twist,intermediate,hips;back;core,30,static_hold,hold,per_side,candidate_for_v1,Suggested duration is PER SIDE; modify as needed.,none,Crescent Lunge Twist,intermediate,30,static_hold
+Lizard Pose,intermediate,hips;legs,60,static_hold,hold,per_side,requires_modification_rules,Per side; avoid forcing hip depth. Require appropriate modification options.,none,Lizard Pose,intermediate,60,static_hold
+Pigeon Pose,intermediate,hips;legs;back,60,static_hold,hold,per_side,requires_modification_rules,Per side; knee-sensitive; offer reclined figure-four alternative. Require appropriate modification options.,none,Pigeon Pose,intermediate,60,static_hold
+Frog Pose,intermediate,hips;legs,30,static_hold,hold,once,requires_modification_rules,Can be intense for knees/groin; conservative duration and modifications.,duration_seconds,Frog Pose,intermediate,45,static_hold
+Cow Face Pose,intermediate,hips;shoulders;back,45,static_hold,hold,per_side,candidate_for_v1,Per side if using asymmetrical legs/arms; modify hips/shoulders.,none,Cow Face Pose,intermediate,45,static_hold
+Boat Pose,intermediate,core;hips;back,30,static_hold,hold,once,candidate_for_v1,Primary static_hold; challenges core and balance secondarily.,pose_type,Boat Pose,intermediate,30,balance
+Reverse Tabletop,intermediate,arms;shoulders;hips;core,30,static_hold,hold,once,candidate_for_v1,Baseline classification only; individual ability and modifications still matter.,none,Reverse Tabletop,intermediate,30,static_hold
+Wild Thing,intermediate,back;shoulders;hips;core,20,balance,hold,per_side,manual_review_only,Complex loaded backbend; manual/supervised only for V1.,none,Wild Thing,intermediate,20,balance
+Camel Pose,intermediate,back;hips;chest;shoulders,20,static_hold,hold,once,requires_modification_rules,Warm shoulders/hip flexors/spine first; backbend modifications.,none,Camel Pose,intermediate,20,static_hold
+Bow Pose,intermediate,back;legs;shoulders,20,static_hold,hold,once,requires_modification_rules,Requires shoulder and spinal extension; avoid forcing. Require appropriate modification options.,none,Bow Pose,intermediate,20,static_hold
+Crow Pose,intermediate,arms;shoulders;core;wrists,15,arm_balance,hold,once,manual_review_only,Arm balance with wrist-loading and fall risk; do not auto-assign.,none,Crow Pose,intermediate,15,arm_balance
+Side Crow Pose,advanced,arms;shoulders;core;wrists,15,arm_balance,hold,per_side,manual_review_only,Side-specific arm balance; manual/supervised only.,none,Side Crow Pose,advanced,15,arm_balance
+Eight-Angle Pose,advanced,arms;shoulders;core;hips,15,arm_balance,hold,per_side,manual_review_only,Side-specific advanced arm balance; manual/supervised only.,none,Eight-Angle Pose,advanced,15,arm_balance
+Firefly Pose,advanced,arms;core;hips;legs,15,arm_balance,hold,once,manual_review_only,Advanced arm balance; manual/supervised only.,none,Firefly Pose,advanced,15,arm_balance
+Flying Pigeon Pose,advanced,arms;core;hips;shoulders,15,arm_balance,hold,per_side,manual_review_only,Side-specific advanced arm balance; manual/supervised only.,none,Flying Pigeon Pose,advanced,15,arm_balance
+Wheel Pose,advanced,back;shoulders;arms;legs,20,static_hold,hold,once,manual_review_only,Deep loaded backbend; manual/supervised only.,none,Wheel Pose,advanced,20,static_hold
+King Pigeon (advanced backbend),advanced,hips;back;shoulders,20,static_hold,hold,per_side,manual_review_only,Ambiguous variants; specify exact variation; manual/supervised only.,name,King Pigeon Pose,advanced,20,static_hold
+Full Splits,advanced,hips;legs,30,static_hold,hold,once,manual_review_only,Advanced end-range mobility; manual/supervised only.,none,Full Splits,advanced,30,static_hold
+Standing Splits,advanced,legs;hips;core,20,balance,hold,per_side,manual_review_only,Per side; advanced balance/end-range demand. Do not auto-generate in V1.,none,Standing Splits,advanced,20,balance
+Bird of Paradise,advanced,legs;hips;core;shoulders,20,balance,hold,per_side,manual_review_only,Per side; advanced bind and balance. Do not auto-generate in V1.,none,Bird of Paradise,advanced,20,balance
+Forearm Stand,advanced,shoulders;arms;core,15,inversion,hold,once,manual_review_only,Advanced inversion; do not auto-assign based on level alone.,none,Forearm Stand,advanced,15,inversion
+Handstand,advanced,shoulders;arms;core;wrists,15,inversion,hold,once,manual_review_only,Advanced inversion; do not auto-assign based on level alone.,none,Handstand,advanced,15,inversion
+Headstand,advanced,shoulders;core;neck,15,inversion,hold,once,manual_review_only,Neck-loading inversion; exclude from automated V1 sequences.,none,Headstand,advanced,15,inversion
+Shoulderstand,advanced,shoulders;core;neck,30,inversion,hold,once,manual_review_only,Neck-loading inversion; exclude from automated V1 sequences.,none,Shoulderstand,advanced,30,inversion
+Plow Pose,advanced,back;shoulders;neck,30,inversion,hold,once,manual_review_only,Neck-loading inversion; exclude from automated V1 sequences.,none,Plow Pose,advanced,30,inversion
+Scorpion Pose,advanced,back;shoulders;arms;core,10,inversion,hold,once,manual_review_only,Advanced inversion/backbend; exclude from automated V1 sequences.,none,Scorpion Pose,advanced,10,inversion

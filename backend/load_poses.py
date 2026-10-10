@@ -1,19 +1,42 @@
+import csv
 import boto3
 
 dynamodb = boto3.resource("dynamodb")
 poses_table = dynamodb.Table("flowforge-poses")
 
-POSES = [
-    {"pose_id": "child", "name": "Child's Pose", "target_area": "hips", "difficulty": "beginner", "hold_seconds": 45},
-    {"pose_id": "low-lunge", "name": "Low Lunge", "target_area": "hips", "difficulty": "beginner", "hold_seconds": 40},
-    {"pose_id": "pigeon", "name": "Pigeon Pose", "target_area": "hips", "difficulty": "intermediate", "hold_seconds": 60},
-    {"pose_id": "frog", "name": "Frog Pose", "target_area": "hips", "difficulty": "intermediate", "hold_seconds": 60},
-    {"pose_id": "thread-needle", "name": "Thread the Needle", "target_area": "shoulders", "difficulty": "beginner", "hold_seconds": 30},
-    {"pose_id": "cow-face", "name": "Cow Face Pose", "target_area": "shoulders", "difficulty": "intermediate", "hold_seconds": 45},
-    {"pose_id": "cat-cow", "name": "Cat-Cow", "target_area": "lower back", "difficulty": "beginner", "hold_seconds": 30},
-    {"pose_id": "supine-twist", "name": "Supine Twist", "target_area": "lower back", "difficulty": "beginner", "hold_seconds": 45},
-]
 
-for pose in POSES:
-    poses_table.put_item(Item=pose)
-    print(f"Loaded {pose['name']}")
+def make_pose_id(name):
+    # "Child's Pose" becomes "childs-pose"
+    cleaned = name.lower().replace("'", "").replace("(", "").replace(")", "")
+    return cleaned.replace(" ", "-")
+
+
+# Step 1: clear out whatever is in the table now
+old_items = poses_table.scan()["Items"]
+with poses_table.batch_writer() as batch:
+    for item in old_items:
+        batch.delete_item(Key={"pose_id": item["pose_id"]})
+print(f"Cleared {len(old_items)} old poses")
+
+# Step 2: load every row of poses.csv
+count = 0
+with open("backend/poses.csv", newline="", encoding="utf-8") as file:
+    reader = csv.DictReader(file)
+    with poses_table.batch_writer() as batch:
+        for row in reader:
+            item = {
+                "pose_id": make_pose_id(row["name"]),
+                "name": row["name"],
+                "difficulty": row["difficulty"],
+                "body_areas": row["body_areas"].split(";"),
+                "duration_seconds": int(row["duration_seconds"]),
+                "pose_type": row["pose_type"],
+                "timing_mode": row["timing_mode"],
+                "side_mode": row["side_mode"],
+                "v1_status": row["v1_status"],
+                "review_note": row["review_note"],
+            }
+            batch.put_item(Item=item)
+            count = count + 1
+
+print(f"Loaded {count} poses")
