@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlowForge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>FlowForge</h1>
+      <p class="tagline">A yoga flow built for your body and your time.</p>
+    </header>
+
+    <!-- Screen 1: choose what you need -->
+    <section id="screen-form">
+      <form id="flow-form">
+        <fieldset>
+          <legend>Where do you want to focus?</legend>
+          <div class="chips" id="areas">
+            <label class="chip"><input type="checkbox" name="area" value="full body"><span>Full body</span></label>
+            <label class="chip"><input type="checkbox" name="area" value="neck"><span>Neck</span></label>
+            <label class="chip"><input type="checkbox" name="area" value="shoulders"><span>Shoulders</span></label>
+            <label class="chip"><input type="checkbox" name="area" value="arms"><span>Arms</span></label>
+            <label class="chip"><input type="checkbox" name="area" value="wrists"><span>Wrists</span></label>
+            <label class="chip"><input type="checkbox" name="area" value="chest"><span>Chest</span></label>
+            <label class="chip"><input type="checkbox" name="area" value="back"><span>Back</span></label>
+            <label class="chip"><input type="checkbox" name="area" value="core"><span>Core</span></label>
+            <label class="chip"><input type="checkbox" name="area" value="hips"><span>Hips</span></label>
+            <label class="chip"><input type="checkbox" name="area" value="legs"><span>Legs</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>How experienced are you?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="difficulty" value="beginner" checked><span>Beginner</span></label>
+            <label class="chip"><input type="radio" name="difficulty" value="intermediate"><span>Intermediate</span></label>
+            <label class="chip"><input type="radio" name="difficulty" value="advanced"><span>Advanced</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>How much time do you have?</legend>
+          <select id="minutes" name="minutes" aria-label="Minutes">
+            <option value="5">5 minutes</option>
+            <option value="10" selected>10 minutes</option>
+            <option value="15">15 minutes</option>
+            <option value="20">20 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="45">45 minutes</option>
+            <option value="60">60 minutes</option>
+          </select>
+        </fieldset>
+
+        <p id="form-error" class="error" role="alert" hidden></p>
+        <button type="submit" id="build-button" class="primary">Build my flow</button>
+      </form>
+    </section>
+
+    <!-- Screen 2: preview the flow -->
+    <section id="screen-preview" hidden>
+      <h2>Your flow</h2>
+      <p id="preview-summary" class="summary"></p>
+      <ol id="pose-list" class="pose-list"></ol>
+      <p id="preview-error" class="error" role="alert" hidden></p>
+      <div class="actions">
+        <button type="button" id="start-button" class="primary">Start guided flow</button>
+        <button type="button" id="regenerate-button">Build a different one</button>
+        <button type="button" id="change-button" class="link">Change my choices</button>
+      </div>
+    </section>
+
+    <!-- Screen 3: guided mode with a countdown -->
+    <section id="screen-guided" hidden>
+      <p id="step-count" class="summary"></p>
+      <h2 id="step-name" aria-live="polite"></h2>
+      <p id="step-label" class="side-label"></p>
+      <p id="timer" class="timer">0:00</p>
+      <div class="bar"><div id="bar-fill"></div></div>
+      <div class="actions row">
+        <button type="button" id="prev-button">Back</button>
+        <button type="button" id="pause-button" class="primary">Pause</button>
+        <button type="button" id="next-button">Skip</button>
+      </div>
+      <button type="button" id="quit-button" class="link">End early</button>
+    </section>
+
+    <!-- Screen 4: finished -->
+    <section id="screen-done" hidden>
+      <h2>Flow complete</h2>
+      <p class="summary">Nice work. Take a moment before you move on.</p>
+      <div class="actions">
+        <button type="button" id="again-button" class="primary">Build another flow</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
