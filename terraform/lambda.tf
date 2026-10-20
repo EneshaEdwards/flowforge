@@ -45,6 +45,7 @@ resource "aws_lambda_function" "generate_flow" {
   function_name    = "flowforge-generate-flow"
   role             = aws_iam_role.lambda_role.arn
   runtime          = "python3.12"
+  timeout          = 10
   handler          = "lambda_function.lambda_handler"
   filename         = data.archive_file.lambda_zip.output_path
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256

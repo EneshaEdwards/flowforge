@@ -21,6 +21,53 @@ TYPE_ORDER = [
 # Every flow ends with this pose
 REST_POSE = "Corpse Pose"
 
+# The longest flow a request can ask for
+MAX_MINUTES = 60
+
+
+def respond(status, payload):
+    # One place that builds every response, so they all look the same
+    return {
+        "statusCode": status,
+        "headers": {"Content-Type": "application/json"},
+        "body": json.dumps(payload, default=int),
+    }
+
+
+def read_request(event):
+    # API Gateway sends the JSON as a string in event["body"].
+    # A direct test passes the fields at the top level of the event.
+    if "body" in event:
+        try:
+            return json.loads(event["body"] or "{}")
+        except json.JSONDecodeError:
+            return None
+    return event
+
+
+def check_request(request):
+    # Returns an error message, or None if the request is fine
+    if not isinstance(request, dict):
+        return "Request body must be valid JSON."
+
+    body_areas = request.get("body_areas")
+    if not isinstance(body_areas, list) or len(body_areas) == 0:
+        return "body_areas must be a list with at least one body area."
+    if not all(isinstance(area, str) for area in body_areas):
+        return "body_areas must only contain text."
+
+    difficulty = request.get("difficulty")
+    if not isinstance(difficulty, str) or difficulty not in LEVELS:
+        return "difficulty must be beginner, intermediate, or advanced."
+
+    minutes = request.get("minutes", 10)
+    if isinstance(minutes, bool) or not isinstance(minutes, int):
+        return "minutes must be a whole number."
+    if minutes < 1 or minutes > MAX_MINUTES:
+        return "minutes must be between 1 and " + str(MAX_MINUTES) + "."
+
+    return None
+
 
 def seconds_for(pose):
     # A per-side pose is done on both sides, so it takes twice as long
@@ -49,9 +96,14 @@ def type_rank(pose):
 
 
 def lambda_handler(event, context):
-    body_areas = event["body_areas"]
-    difficulty = event["difficulty"]
-    target_seconds = event.get("minutes", 10) * 60
+    request = read_request(event)
+    error = check_request(request)
+    if error:
+        return respond(400, {"error": error})
+
+    body_areas = request["body_areas"]
+    difficulty = request["difficulty"]
+    target_seconds = request.get("minutes", 10) * 60
     max_level = LEVELS[difficulty]
 
     all_poses = poses_table.scan()["Items"]
@@ -83,7 +135,7 @@ def lambda_handler(event, context):
             used_seconds = used_seconds + seconds
 
     if len(chosen) == 0:
-        return {"statusCode": 404, "body": json.dumps({"error": "No poses found for that request."})}
+        return respond(404, {"error": "No poses found for that request."})
 
     # Step 4: put the poses in flow order, then end with the rest pose
     chosen.sort(key=type_rank)
@@ -98,4 +150,4 @@ def lambda_handler(event, context):
         "poses": chosen,
         "total_seconds": used_seconds + rest_seconds,
     }
-    return {"statusCode": 200, "body": json.dumps(flow, default=int)}
+    return respond(200, flow)
